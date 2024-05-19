@@ -1,0 +1,50 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{black}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage[margin=0.7in]{geometry}
+
+
+\boldname{Surname}{Name}{N.}
+
+\begin{document}
+\thispagestyle{empty}
+% Heading
+\headinginline{Finlay Williams}{
+   07397 291346\\
+    \email{finlaywilliams@outlook.com} \\
+   101B Liverpool Road, N1 0RG
+}
+
+\vspace{0.8cm} 
+
+Software Engineer at Microsoft and award winning Electrical Engineering graduate seeking new opportunities.
+
+
+
+% Page One
+\import{sections/}{relevant experience.tex}
+\import{sections/}{further experience.tex}
+\import{sections/}{education.tex}
+% \vspace{1ex}
+
+
+% Page Two
+\import{sections/}{skills.tex}
+\import{sections/}{interests.tex}
+\thispagestyle{empty}
+
+\centering
+\textit{\textbf{References on Request}}
+
+\end{document}
